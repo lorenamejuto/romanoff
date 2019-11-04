@@ -1,0 +1,516 @@
+@font-face {
+    font-family: 'museo_sans500';
+    src: url('../fonts/museosans_500-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans300';
+    src: url('../fonts/museosans-300-webfont.woff2') format('woff2'),
+         url('../fonts/museosans-300-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('../fonts/raleway-black-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	text-decoration: none;
+	list-style: none;
+}
+h1 {
+	font-family: 'ralewaybold';
+	font-size: 72px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	color: #fff;
+	margin-bottom: 45px;
+}
+h2 {
+	font-family: 'museo_sans500';
+	font-size: 48px;
+	letter-spacing: 2px;
+	color: #303030;
+	margin-bottom: 45px;
+}
+h3 {
+	font-family: 'museo_sans500';
+	font-size: 24px;
+	letter-spacing: 2px;
+	color: #303030;
+}
+h4 {
+	font-family: 'museo_sans500';
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 2.5px;
+  line-height: 26px;
+}
+h5 {
+	font-family: 'museo_sans500';
+	color: #fff;
+	font-size: 22px;
+}
+p {
+    font-family: 'open_sansregular';
+    font-size: 16px;
+    line-height: 28px;
+}
+hr {
+	width: 72px;
+	height: 5px;
+	background-color: #e26821;
+	margin-bottom: 50px;
+	border: 0;
+}
+.contenedor {
+	max-width: 1300px;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.contenedor-medio {
+	max-width: 650px;
+	width: 60%;
+	margin: 0 40% 0 20px;
+	box-sizing: border-box;
+}
+.btn {
+  display: inline-block;
+  font-family: 'ralewaybold';
+  font-size: 17px;
+	border-radius: 25px;
+	padding: 15px 20px;
+	color: #fff;
+	background-color: #e26821;
+  letter-spacing: 1.5px;
+}
+
+.btn:hover {
+  background-color: #D3591C;
+}
+
+.btn-secondary{
+  font-family: 'museo_sans500';
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  background: none;
+  border: 0;
+  padding: 5px;
+  border: 2px solid transparent;
+  margin-bottom: 5px;
+}
+
+.btn-secondary:hover, .btn-secondary.active {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+/*Header*/
+header {
+	transition: all 0.7s;
+	position: absolute;
+	z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px 0px;
+}
+header.stickyHeader {
+	position: fixed;
+	background-color: rgb(0,0,0,.7);
+}
+header .contenedor {
+	max-width: 1640px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav a {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: #fff;
+}
+header nav a:hover {
+	color: #e26821;
+}
+header nav li {
+	display: inline-block;
+  padding-left: 60px;
+}
+header nav li:first-child {
+  padding-left: 0;
+}
+.flecha-header {
+  display: none;
+}
+.header {
+	position: relative;
+}
+.frase-principal {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 1130px;
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.siguiente {
+	display: block;
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute;
+	bottom: 30px;
+	z-index: 8;
+}
+.siguiente img {
+	width: 30px;
+}
+.navbar-toggler, .logo-mobile {
+	display: none;
+}
+.video-imagen img {
+ 	display: block;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+/*End Header*/
+
+/*Nosotros*/
+.nosotros {
+	display: flex;
+	justify-content: space-between;
+}
+.nosotros .contenedor-medio {
+	width: 100%;
+	margin: 0 2% 0 20px
+}
+.nosotros p {
+	color: #303030;
+  max-width: 450px;
+}
+.nosotros article {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.nosotros aside {
+	width: 50%;
+}
+.nosotros aside img {
+	width: 100%;
+	display: block;
+}
+/*End Nosotros*/
+
+/*Servicios*/
+.servicios {
+	background-color: #2c2c2c;
+}
+.servicios .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+.servicios h2, .servicios p {
+	color: #fff;
+}
+.servicios .contenedor .contenedor-servicios {
+	width: 60%;
+	padding: 150px 70px;
+	box-sizing: border-box;
+}
+.servicios .logos-servicios {
+	text-align: center;
+	display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+.servicios .logos-servicios aside {
+	display: inline-block;
+	margin: 20px;
+}
+.servicios .logos-servicios aside img {
+	max-width: 100%;
+  margin-bottom: 30px;
+}
+.servicios .contenedor article {
+	width: 40%;
+	padding: 150px 70px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+/*End Servicios*/
+/*Productos*/
+.productos .contenedor{
+	display: flex;
+	justify-content: center;
+	padding-top: 140px;
+	padding-bottom: 140px;
+	align-items: baseline;
+}
+.productos h2, .productos p {
+	color: #303030;
+}
+.productos h3 {
+	padding-bottom: 50px;
+}
+.productos aside h3:last-child {
+	padding-bottom: 0;
+}
+.productos article {
+	width: 30%;
+	margin-right: 20%;
+	box-sizing: border-box;
+}
+.productos aside {
+	width: 25%;
+	border-left: 1px solid #e26821;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+/*End Productos*/
+/*Sección Slider*/
+.slider .contenedor {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: space-between;
+}
+.slider article {
+	width: 40%;
+  margin-left: 20%;
+}
+.slider aside {
+	width: 40%;
+  color: #fff;
+  max-width: 405px;
+}
+
+.slider h2 {
+  color: #fff;
+}
+
+.slider p {
+  height: 146px;
+  overflow: hidden;
+}
+.slider button {
+  display: block;
+}
+/*End Slider*/
+/*Seccion eventosdestacados*/
+.eventos-destacados {
+	display: flex;
+	justify-content: space-between;
+	background-color: #303030;
+}
+.eventos-destacados h2, .eventos-destacados p {
+	color: #fff;
+}
+.eventos-destacados .single-item h2 {
+	font-size: 40px;
+}
+
+.eventos-destacados article, .eventos-destacados aside {
+	width: 50%;
+}
+.eventos-destacados article {
+	align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.eventos-destacados .contenedor-medio {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 10% 0 20px;
+}
+.eventos-destacados aside img {
+	max-width: 100%;
+}
+
+/*End eventos destacados*/
+
+/*Clientes*/
+.clientes {
+  padding: 170px 0;
+}
+
+.clientes h2 {
+  margin-bottom: 80px;
+}
+
+.clientes .slick-initialized .slick-slide {
+  text-align: center;
+}
+/*End Clientes*/
+/*Sección Contacto*/
+.contacto {
+	background-image: url(../images/fondo-contacto.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+  padding: 120px 0;
+}
+.contacto h2 {
+	color: #fff;
+}
+.contacto p {
+	color: #fff;
+  max-width: 360px;
+}
+.contacto a {
+	color:#e26821;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
+.contacto .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+.contacto .contenedor article {
+	box-sizing: border-box;
+	width: 50%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contacto .contenedor aside {
+  box-sizing: border-box;
+	width: 50%;
+  padding-right: 10%;
+  padding-top: 50px;
+}
+
+.contacto label {
+	display: block;
+	font-family: 'museo_sans500';
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 5px;
+}
+.contacto input {
+  font-family: 'open_sansregular';
+  font-size: 16px;
+	display: block;
+	padding: 4px;
+  width: 100%;
+	border: 0;
+  border-radius: 4px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+input.btn {
+	width: inherit;
+  height: inherit;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'ralewaybold';
+  font-size: 17px;
+  border-radius: 25px;
+  padding: 15px 20px;
+}
+.contacto textarea {
+  font-family: 'open_sansregular';
+  font-size: 16px;
+	padding: 4px;
+  width: 100%;
+	border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+/*End Contacto*/
+/*Footer*/
+footer {
+	background-color: #303030;
+}
+footer .contenedor {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	align-items: center;
+}
+footer h5 {
+	padding-right: 5px;
+	display: inline-block;
+}
+footer div div {
+	display: flex;
+	justify-content: space-between;
+}
+footer div i {
+	color: #e26821;
+	font-size: 24px;
+	padding-right: 50px;
+}
+
+/*End Footer*/
